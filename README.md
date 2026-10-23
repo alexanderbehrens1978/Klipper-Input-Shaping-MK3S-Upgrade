@@ -1,3 +1,11 @@
+Ich verwende das ganze mit dem kostenlosen Repetierserver 2.0.1 https://github.com/repetier/Repetier-Server
+
+Hiermit wird das klipper Firmware auf den Prusa MK3S übertragen sudo avrdude -v -p atmega2560 -c wiring -P /dev/ttyACM0 -b 115200 -D -U flash:w:/home/alex/mk3s-flash/klipper.elf.hex:i
+
+Hiermit wird die Original Firmware wieder hergestellt. sudo avrdude -v -p atmega2560 -c wiring -P /dev/ttyACM0 -b 115200 -D -U flash:w:0:/home/alex/mk3s-flash/prusa_mk3s.hex:i
+
+Wenn alles läuft, dann können die Prusa MK3.5 Profile übernommen werden. Dazu am besten den Prusa MK3.5 als neuen Drucker im PrusaSlicer hinzufügen.
+
 360 Grad Cooling from MK4S
 https://www.printables.com/model/1092122-mk3smk35-360-degree-print-cooling-modeled-after-mk
 
