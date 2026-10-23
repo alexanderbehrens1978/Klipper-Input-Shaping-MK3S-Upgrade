@@ -1,3 +1,5 @@
+https://github.com/alexanderbehrens1978/Mk3s-Klipper
+
 Ich verwende das ganze mit dem kostenlosen Repetierserver 2.0.1 https://github.com/repetier/Repetier-Server
 
 Hiermit wird das klipper Firmware auf den Prusa MK3S übertragen sudo avrdude -v -p atmega2560 -c wiring -P /dev/ttyACM0 -b 115200 -D -U flash:w:/home/alex/mk3s-flash/klipper.elf.hex:i
