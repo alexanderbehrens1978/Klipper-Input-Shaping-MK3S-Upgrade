@@ -1,3 +1,21 @@
+360 Grad Cooling from MK4S
+https://www.printables.com/model/1092122-mk3smk35-360-degree-print-cooling-modeled-after-mk
+
+Repetier Server 2.0.1
+https://github.com/repetier/Repetier-Server
+- Klipper Installation Python 3 with Klipper 0.13
+
+Raspberry Pi 4 and 8GB RAM with SSD
+
+Prusa MK3.5 Profil copied every setting to an MK3S Setting.
+
+It prints fast
+It is cheap
+
+My Pi 4 controlled 6 MK3S and 1 MK4S
+
+Every Setting was in Klipper as macro defined
+
 # Klipperized Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
 
 Latest  updates:
