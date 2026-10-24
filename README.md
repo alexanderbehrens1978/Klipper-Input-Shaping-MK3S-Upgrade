@@ -1,3 +1,5 @@
+https://ar3dp.de/docs/3d-druck/klipper-3d/klipper-auf-prusa-i3-mk3-mk3s-installieren/
+
 # Klipperized Input Shaping for the MK3S/+, a simplified guide for a powerful upgrade
 
 Latest  updates:
