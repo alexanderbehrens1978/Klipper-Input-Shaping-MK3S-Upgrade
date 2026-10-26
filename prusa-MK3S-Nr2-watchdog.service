@@ -1,0 +1,12 @@
+[Unit]
+Description=Prusa MK3S Klipper USB Watchdog
+#After=network.target klipper_MK3s_Nr_2_Klipper.service
+After=network.target klipper.service
+
+[Service]
+ExecStart=/usr/local/bin/prusa-MK3S-Nr2-watchdog.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
