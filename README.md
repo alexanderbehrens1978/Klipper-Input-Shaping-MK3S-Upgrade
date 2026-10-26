@@ -1,3 +1,7 @@
+Watchdog hinzugefügt
+
+Der Drucker wird jetzt automatisch erkannt und Klipper startet automatisch.
+
 https://github.com/alexanderbehrens1978/Mk3s-Klipper
 
 Ich verwende das ganze mit dem kostenlosen Repetierserver 2.0.1 https://github.com/repetier/Repetier-Server
