@@ -1,4 +1,3 @@
-Markdown
 # Prusa MK3S Klipper USB Watchdog
 
 Ein robuster, automatisierter Watchdog für Klipper-basierte Prusa MK3S Drucker (Einsy Rambo Board). Das Skript überwacht das Klipper-Log auf USB-Abrisse (EOF), MCU-Timeouts oder interne Board-Resets (Brownouts) und führt vollautomatisch einen harten Hardware-Reset über `uhubctl` und einen Kernel-Rebind des USB-Busses durch.
@@ -63,8 +62,7 @@ sudo systemctl status prusa-MK3S-Nr2-watchdog.service
 prusa-MK3S-Nr2-watchdog.sh – Das Hauptüberwachungs- und Recovery-Skript.
 
 prusa-MK3S-Nr2-watchdog.service – Die systemd-Dienstkonfiguration für den automatischen Hintergrundbetrieb als Root.
-
-
+```
 
 
 https://github.com/alexanderbehrens1978/Mk3s-Klipper
