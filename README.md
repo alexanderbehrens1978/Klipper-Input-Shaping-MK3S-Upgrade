@@ -44,8 +44,8 @@ VEND / PROD: USB Vendor- und Product-ID des Druckers (Standard: 2c99:0002)
 Damit das Skript seine Aktionen sauber protokolliert:
 
 Bash
-sudo touch /var/log/prusa-watchdog.log
-sudo chmod 666 /var/log/prusa-watchdog.log
+sudo touch /var/log/prusa-nr2-watchdog.log
+sudo chmod 666 /var/log/prusa-nr2-watchdog.log
 4. Systemd-Dienst aktivieren und starten
 Registriere den Dienst im System, lade systemd neu und starte die Überwachung:
 
