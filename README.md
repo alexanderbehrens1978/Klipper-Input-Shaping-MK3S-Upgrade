@@ -28,6 +28,8 @@ sudo cp prusa-MK3S-Nr2-watchdog.service /etc/systemd/system/prusa-MK3S-Nr2-watch
 2. Konfiguration anpassen (falls nötig)
 Öffne das Skript unter /usr/local/bin/prusa-MK3S-Nr2-watchdog.sh, falls du einen anderen Hub-Port oder eine andere Log-Datei nutzt:
 
+touch /tmp/klippy_MK3s_Nr_2_Klipper.log
+
 LOGFILE: Pfad zum Klipper-Log (Standard: /tmp/klippy_MK3s_Nr_2_Klipper.log)
 
 HUB: USB-Hub Bus-ID (Standard: 1-1.3)
