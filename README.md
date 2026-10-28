@@ -30,6 +30,8 @@ sudo cp prusa-MK3S-Nr2-watchdog.service /etc/systemd/system/prusa-MK3S-Nr2-watch
 
 touch /tmp/klippy_MK3s_Nr_2_Klipper.log
 
+touch /var/log/prusa-nr2-watchdog.log
+
 LOGFILE: Pfad zum Klipper-Log (Standard: /tmp/klippy_MK3s_Nr_2_Klipper.log)
 
 HUB: USB-Hub Bus-ID (Standard: 1-1.3)
