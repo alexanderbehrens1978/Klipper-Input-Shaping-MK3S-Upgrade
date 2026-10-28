@@ -54,13 +54,13 @@ while true; do
             #
             # USB-Port ausschalten
             #
-            /usr/bin/uhubctl -l "$HUB" -p "$PORT" -a off >> "$OUTLOG" 2>&1
+            /usr/sbin/uhubctl -l "$HUB" -p "$PORT" -a off >> "$OUTLOG" 2>&1
             sleep 3
 
             #
             # USB-Port einschalten
             #
-            /usr/bin/uhubctl -l "$HUB" -p "$PORT" -a on >> "$OUTLOG" 2>&1
+            /usr/sbin/uhubctl -l "$HUB" -p "$PORT" -a on >> "$OUTLOG" 2>&1
             sleep 5
 
             #
