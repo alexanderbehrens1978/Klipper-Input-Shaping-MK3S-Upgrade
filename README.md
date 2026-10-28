@@ -57,7 +57,7 @@ sudo systemctl start prusa-MK3S-Nr2-watchdog.service
 Du kannst die Live-Aktivitäten des Watchdogs jederzeit über die Logdatei verfolgen:
 
 Bash
-tail -f /var/log/prusa-watchdog.log
+tail -f /var/log/prusa-nr2-watchdog.log
 Den Status des Systemd-Dienstes prüfst du mit:
 
 Bash
