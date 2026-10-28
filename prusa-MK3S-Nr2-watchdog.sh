@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LOGFILE="/tmp/klippy_MK3s_Nr_2_Klipper.log"
-OUTLOG="/var/log/prusa-watchdog.log"
+OUTLOG="/var/log/prusa-nr2-watchdog.log"
 HUB="1-1.3"
 PORT="2"
 VEND="2c99"
