@@ -1,4 +1,6 @@
-Den Drucker per Tapo P110 ein und Ausschalten. Beim einschalten wird ein FIRMWARE_RESTART gesendet.
+# Passende Klipper 2 und 5 Konfigurationen liegen in Klipper Prusa MK3S Nr 2 und 5
+
+# Den Drucker per Tapo P110 ein und Ausschalten. Beim einschalten wird ein FIRMWARE_RESTART gesendet.
 
 In der tapo_mk3snr2_control.py muss folgendes eingetragen werden
 - IP Adresse
