@@ -2,75 +2,18 @@
 
 Den Drucker per Tapo P110 ein und Ausschalten. Beim einschalten wird ein FIRMWARE_RESTART gesendet.
 
-# Prusa MK3S Klipper USB Watchdog
+In der tapo_mk3snr2_control.py muss folgendes eingetragen werden
+- IP Adresse
+- Email
+- Password
 
-Ein robuster, automatisierter Watchdog für Klipper-basierte Prusa MK3S Drucker (Einsy Rambo Board). Das Skript überwacht das Klipper-Log auf USB-Abrisse (EOF), MCU-Timeouts oder interne Board-Resets (Brownouts) und führt vollautomatisch einen harten Hardware-Reset über `uhubctl` und einen Kernel-Rebind des USB-Busses durch.
+Im Repetier Server kann dann die Steckdose unter Globale Einstellungen als externer Link hinterlegt werden.
 
----
+Jeder Drucker kann man so EIN und AUS geschaltet werden.
 
-## 🛠 Voraussetzungen & Abhängigkeiten
-
-Das System benötigt zwei essenzielle Systempakete für die USB-Hardware-Steuerung:
-- **`uhubctl`** (zum physikalischen Schalten des USB-Hub-Ports und Kappen des 5V-Reststroms)
-- **`usbutils`** (für `lsusb` zur Geräteerkennung)
-
-### Installation der Abhängigkeiten:
-```bash
-sudo apt update
-sudo apt install -y uhubctl usbutils
-⚙️ Installation & Einrichtung
-1. Repository klonen oder Skripte kopieren
-Kopiere das Skript und die Systemd-Dienstdatei an ihre Bestimmungsorte im System:
-
-Bash
-# Watchdog-Skript nach /usr/local/bin kopieren
-sudo cp prusa-MK3S-Nr2-watchdog.sh /usr/local/bin/prusa-MK3S-Nr2-watchdog.sh
-sudo chmod +x /usr/local/bin/prusa-MK3S-Nr2-watchdog.sh
-
-# Systemd-Dienstdatei nach /etc/systemd/system kopieren
-sudo cp prusa-MK3S-Nr2-watchdog.service /etc/systemd/system/prusa-MK3S-Nr2-watchdog.service
-2. Konfiguration anpassen (falls nötig)
-Öffne das Skript unter /usr/local/bin/prusa-MK3S-Nr2-watchdog.sh, falls du einen anderen Hub-Port oder eine andere Log-Datei nutzt:
-
-touch /tmp/klippy_MK3s_Nr_2_Klipper.log
-
-touch /var/log/prusa-nr2-watchdog.log
-
-LOGFILE: Pfad zum Klipper-Log (Standard: /tmp/klippy_MK3s_Nr_2_Klipper.log)
-
-HUB: USB-Hub Bus-ID (Standard: 1-1.3)
-
-PORT: Portnummer am Hub (Standard: 2)
-
-VEND / PROD: USB Vendor- und Product-ID des Druckers (Standard: 2c99:0002)
-
-3. Logdatei für den Watchdog anrichten
-Damit das Skript seine Aktionen sauber protokolliert:
-
-Bash
-sudo touch /var/log/prusa-nr2-watchdog.log
-sudo chmod 666 /var/log/prusa-nr2-watchdog.log
-4. Systemd-Dienst aktivieren und starten
-Registriere den Dienst im System, lade systemd neu und starte die Überwachung:
-
-Bash
-sudo systemctl daemon-reload
-sudo systemctl enable prusa-MK3S-Nr2-watchdog.service
-sudo systemctl start prusa-MK3S-Nr2-watchdog.service
-📊 Überwachung & Logs
-Du kannst die Live-Aktivitäten des Watchdogs jederzeit über die Logdatei verfolgen:
-
-Bash
-tail -f /var/log/prusa-nr2-watchdog.log
-Den Status des Systemd-Dienstes prüfst du mit:
-
-Bash
-sudo systemctl status prusa-MK3S-Nr2-watchdog.service
-📂 Enthaltene Dateien
-prusa-MK3S-Nr2-watchdog.sh – Das Hauptüberwachungs- und Recovery-Skript.
-
-prusa-MK3S-Nr2-watchdog.service – Die systemd-Dienstkonfiguration für den automatischen Hintergrundbetrieb als Root.
-```
+Jede Steckdose hat ihren eigenen Webport
+5000 Nr 2
+5001 Nr 5
 
 
 https://github.com/alexanderbehrens1978/Mk3s-Klipper
