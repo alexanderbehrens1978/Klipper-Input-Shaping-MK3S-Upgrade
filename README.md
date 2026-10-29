@@ -1,5 +1,3 @@
-# Alternative zum Watchdog
-
 Den Drucker per Tapo P110 ein und Ausschalten. Beim einschalten wird ein FIRMWARE_RESTART gesendet.
 
 In der tapo_mk3snr2_control.py muss folgendes eingetragen werden
