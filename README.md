@@ -1,3 +1,7 @@
+# Alternative zum Watchdog
+
+Den Drucker per Tapo P110 ein und Ausschalten. Beim einschalten wird ein FIRMWARE_RESTART gesendet.
+
 # Prusa MK3S Klipper USB Watchdog
 
 Ein robuster, automatisierter Watchdog für Klipper-basierte Prusa MK3S Drucker (Einsy Rambo Board). Das Skript überwacht das Klipper-Log auf USB-Abrisse (EOF), MCU-Timeouts oder interne Board-Resets (Brownouts) und führt vollautomatisch einen harten Hardware-Reset über `uhubctl` und einen Kernel-Rebind des USB-Busses durch.
