@@ -1,0 +1,12 @@
+[Unit]
+Description=Tapo Web Control for Prusa MK3S Nr.5
+After=network.target
+
+[Service]
+User=alex
+WorkingDirectory=/home/alex/printer_data/config/scripts/
+ExecStart=/home/alex/printer_data/config/scripts/tapo_env/bin/python3 /home/alex/printer_data/config/scripts/tapo_mk3snr5_web.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
