@@ -1,7 +1,7 @@
 #[include mainsail.cfg]
-#[include mainsail.cfg]
 
 # Prusa MK3S Nr 5
+# aktuell 30.10.2026 12:00
 
 #[mcu adxl]
 #serial: /dev/serial/by-id/usb-Klipper_rp2040_E6647C74033A2937-if00
