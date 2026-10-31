@@ -1,3 +1,11 @@
+# kiauth nehmen und gleich die Anzahl der Drucker festlegen
+
+Spoolman kann man auch installieren
+
+Fluid verwenden. Schöner und übersichtlicher
+
+
+
 # Passende Klipper 2 und 5 Konfigurationen liegen in Klipper Prusa MK3S Nr 2 und 5
 
 # Den Drucker per Tapo P110 ein und Ausschalten. Beim einschalten wird ein FIRMWARE_RESTART gesendet.
